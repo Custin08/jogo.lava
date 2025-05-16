@@ -15,7 +15,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text.Acts.SetVisible,
 		C3.Plugins.Button.Cnds.OnClicked,
 		C3.Plugins.System.Cnds.EveryTick,
-		C3.Plugins.Text.Acts.SetText
+		C3.Plugins.Text.Acts.SetText,
+		C3.Plugins.System.Cnds.Compare,
+		C3.Behaviors.Platform.Exps.VectorX,
+		C3.Plugins.Sprite.Acts.SetMirrored
 	];
 };
 self.C3_JsPropNameTable = [
@@ -33,6 +36,7 @@ self.C3_JsPropNameTable = [
 	{Botão: 0},
 	{Texto3: 0},
 	{Sprite3: 0},
+	{ninja_10KDStudios_runbackwards_: 0},
 	{moedas: 0}
 ];
 
@@ -47,5 +51,6 @@ self.InstanceType = {
 	Sprite2: class extends self.ISpriteInstance {},
 	Botão: class extends self.IButtonInstance {},
 	Texto3: class extends self.ITextInstance {},
-	Sprite3: class extends self.ISpriteInstance {}
+	Sprite3: class extends self.ISpriteInstance {},
+	ninja_10KDStudios_runbackwards_: class extends self.ISpriteInstance {}
 }
